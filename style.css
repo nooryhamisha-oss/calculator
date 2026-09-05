@@ -1,152 +1,289 @@
 body {
-    background-image: url("WhatsApp Image 2026-09-03 at 1.31.14 PM.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("./imge/bagrond.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
-    margin: 10px;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
+  margin: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
 }
 
 header h1 {
-    color: #e69a2f;
-    font-family: Georgia, serif;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
+  color: #e69a2f;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
 }
 
 header nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 header nav a {
-    color: #ccc;
-    font-family: Georgia, serif;
-    font-size: 18px;
-    text-decoration: none;
+  color: #ccc;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 body:has(.Home) header nav a[href="index.html"],
 body:has(.calculator) header nav a[href="calculator.html"],
 body:has(.quote) header nav a[href="quote.html"] {
-    color: #e69a2f;
+  color: #e69a2f;
 }
 
 .Home {
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 50px auto;
-    width: 90%;
-    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.6);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 90%;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 .Home h2 {
-    color: #111;
-    font-family: Georgia, serif;
-    font-size: 30px;
-    font-weight: bold;
+  color: #111;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .Home p {
-    color: #222;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
 }
 
-
-
 .calculator {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
 }
 
 .calculator h2 {
-    color: #e69a2f;
-    font-family: Georgia, serif;
-    font-size: 32px;
-    font-weight: bold;
+  color: #e69a2f;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .calculator-box {
-    width: 280px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .display {
-    background-color:#888888;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
+  background-color: #888888;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .buttons button {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    height: 50px;
-    font-size: 17px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  height: 50px;
+  font-size: 17px;
 }
 
 .buttons button:nth-child(4n) {
-    background-color: #e69a2f;
-    color: #222;
+  background-color: #e69a2f;
+  color: #222;
 }
 
 .buttons button:last-child {
-    background-color: #e69a2f;
-    color: #222;
+  background-color: #e69a2f;
+  color: #222;
 }
 
 .buttons .zero {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .quote {
-    
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 40px 50px;
-    margin: 80px auto;
-    width: 80%;
-    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.6);
-    text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 40px 50px;
+  margin: 80px auto;
+  width: 80%;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
 .quote p {
-    color: #111;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin: 0;
+  color: #111;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .quote small {
-    display: block;
-    color: #111;
-    font-family: Georgia, serif;
+  display: block;
+  color: #111;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header nav a {
     font-size: 16px;
-    font-weight: bold;
-    margin-top: 25px;
+  }
+
+  .Home {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .Home h2 {
+    font-size: 26px;
+  }
+
+  .Home p {
+    font-size: 15px;
+  }
+
+  .calculator {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .calculator h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .calculator-box {
+    width: 280px;
+    max-width: 100%;
+  }
+
+  .quote {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px 25px;
+  }
+
+  .quote p {
+    font-size: 18px;
+  }
+
+  .quote small {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  header {
+    margin: 5px;
+    padding: 12px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header nav {
+    gap: 12px;
+  }
+
+  header nav a {
+    font-size: 15px;
+  }
+
+  .Home {
+    width: 80%;
+    padding: 18px;
+    margin: 25px auto;
+  }
+
+  .Home h2 {
+    font-size: 23px;
+  }
+
+  .Home p {
+    font-size: 14px;
+  }
+
+  .calculator {
+    padding: 25px 15px;
+  }
+
+  .calculator h2 {
+    font-size: 24px;
+  }
+
+  .calculator-box {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .buttons button {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .quote {
+    width: 75%;
+    margin: 35px auto;
+    padding: 25px 20px;
+  }
+
+  .quote p {
+    font-size: 17px;
+  }
+
+  .quote small {
+    font-size: 14px;
+    margin-top: 20px;
+  }
 }
